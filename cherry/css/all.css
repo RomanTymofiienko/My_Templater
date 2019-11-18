@@ -302,12 +302,15 @@ main {
 
 .baner_head {
     margin: 20px 0 10px;
+    font-family: arialbold;
     font-size: 18px;
     color: #8e959f;
 }
 
 .banner_text {
+    font-family: arialregular;
     font-size: 14px;
+    line-height: 18px;
     color: #d9dcdf;
 }
 
@@ -383,7 +386,7 @@ main {
 }
 
 .contact_input {
-width: 185px;
+    width: 185px;
     height: 30px;
     padding-left: 10px;
     margin-bottom: 10px;
@@ -429,18 +432,28 @@ width: 185px;
 .headline {
 font-family: arialbold;
     font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 5px;
 }
 
 .headline_text {
+    font-family: arialregular;
     font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 5px;
     color: #5c646e;
 }
 
 .more_about {
+    font-family: arialregular;
     font-size: 12px;
     text-decoration: underline;
     color: #95161f;
 }
+
+
+
+/*Contant */
 
 .contant_inner {
     margin-left: 25px;
@@ -452,6 +465,12 @@ font-family: arialbold;
 .what_we_do {
    color: #5c646e;
     margin-bottom: 30px;
+}
+
+.what_we_do p{
+     font-family: arialregular;
+     font-size:14xp;
+    line-height: 20px;
 }
 
 .text_link{
@@ -474,7 +493,7 @@ font-family: arialbold;
     margin-right: 15px;
 }
 
-.head_info {
+.info_inner h4{
     font-family: arialbold;
     font-size: 18px;
     margin-bottom: 10px;
@@ -483,14 +502,20 @@ font-family: arialbold;
 
 /*List*/
 
-
-ol {
+.lists{
+    font-family: arialregular;
     font-size: 14px;
-    margin-left: 17px;
+    line-height: 24px;
 }
 
+.list_style{
+    display: block;
+}
+
+
+
 .unstyled {
-    font-size: 14px;
+
     margin: 0;
     list-style: none;
 }
@@ -507,10 +532,15 @@ ol {
     background-color: #dedede;
 }
 
-.list_style_inner {
+.list_style ul{
     font-size: 14px;
     margin-left: 25px;
     list-style: disc;
+}
+
+ol {
+
+    margin-left: 17px;
 }
 
 
@@ -561,7 +591,9 @@ footer {
 }
 
 .footer_inner{
+    font-family: arialregular;
     font-size: 12px;
+    line-height: 20px;
     color: #85898f;
     display: flex;
     justify-content: space-between;
