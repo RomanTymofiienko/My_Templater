@@ -368,6 +368,10 @@ main {
     display: block;
     padding-right: 20px;
     padding-left: 25px;
+        position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .contact {

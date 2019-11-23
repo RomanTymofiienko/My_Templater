@@ -200,6 +200,7 @@ h3 {
     margin-bottom: 30px;
     font-size: 30px;
     line-height:30px;
+    text-align: center;
 }
 
 /*Container*/
@@ -283,14 +284,17 @@ main {
     width: 100%;
     overflow: hidden;
     display: block;
+    position: relative;
+
 }
 
 
 .slider_inner {
     width: 100%;
-    position: relative;
     overflow: hidden;
       margin-top: 60px;
+    display: block;
+
 }
 
 .slider_img {
@@ -412,6 +416,7 @@ font-family: droid_sansregular;
 
 /*Projecets*/
 
+/*
 .project_items {
 
     margin-top: 35px;
@@ -420,6 +425,18 @@ display: grid;
 grid-template-rows: 250px 250px;
     grid-template-columns: 312px 312px 312px;
     grid-gap: 12px;
+}
+*/
+
+.project_items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img_projects{
+    margin-bottom: 12px;
 }
 
 /*Blog*/
