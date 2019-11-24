@@ -391,6 +391,7 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+       position: relative;
 }
 
 .tile{
@@ -398,16 +399,44 @@ main {
     width:369px;
     height: 290px;
     background-color: #7b7b7b;
+    position: relative;
+    overflow: hidden;
 }
 
 .hidden{
-    display: none;
+    padding: 75px 50px 0;
+    width:369px;
+    height: 290px;
+    background-color: #7b7b7b;;
+    box-sizing: border-box;
 }
 
 .hidden:hover{
     display:block;
     background-color: #506083;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
+
+
+.hidden h4{
+    margin-bottom: 25px;
+    font-family: open sans;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.hidden p{
+    margin-bottom: 30px;
+    font-family: open sans;
+    font-weight: normal;
+    font-size: 14px;
+    color: #ffffff;
+}
+
 
 .browse{
     font-family: open sans;
