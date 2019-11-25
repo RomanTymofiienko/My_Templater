@@ -1,0 +1,436 @@
+/***************************************************              GENERAL RESET STYLES             ***************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+* {}
+*:focus {outline: none;}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+ol, ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+        text-decoration:none;
+}
+a:hover {
+    text-decoration:none;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+img {
+    border-style:none;
+    max-width:100%;
+}
+form fieldset {
+    margin:0;
+    padding:0;
+    border:none;
+}
+input, textarea, select {
+    vertical-align:middle;
+    color:#000;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+input::-webkit-input-placeholder{color:#ebedec;}
+input:focus::-webkit-input-placeholder{color:#ebedec;}
+/*@media*/
+
+/* @media (min-width: 1921px){}                                                     QHD \ UHD
+@media (min-width: 1600px) and (max-width: 1919px) {}    HD +
+@media (min-width: 1440px) and (max-width: 1599px) {}    macbook
+@media (min-width: 1360px) and (max-width: 1439px) {}    HD
+@media (min-width: 1280px) and (max-width: 1359px) {} IPAD2
+@media (min-width: 1024px) and (max-width: 1279px) {} IPAD
+@media (min-width: 896px) and (max-width: 1023px) {}    Ip Xs max horizontal
+@media (min-width: 812px) and (max-width: 895px) {}        Ip Xs horizontal
+@media (min-width: 768px) and (max-width: 811px) {}        Tablet
+@media (min-width: 736px) and (max-width: 767px) {}        Ip 6,7,8 Plus horizontal
+@media (min-width: 667px) and (max-width: 735px) {}        Ip 6,7,8 horizontal
+@media (min-width: 568px) and (max-width: 666px) {}        Ip 5 horizontal
+@media (min-width: 480px) and (max-width: 567px) {}        Ip 4 horizontal
+@media (min-width: 414px) and (max-width: 479px) {}        Ip 6,7,8
+@media (min-width: 320px) and (max-width: 413px) {}        Ip 4,5 */
+
+/*@media end*/
+
+/* wrapper */
+#wrapper {
+    display:block;
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+header {
+    padding: 35px 0;
+    height: 100px;
+    width:100%;
+    display:block;
+    position:relative;
+    background-image: url(../images/header/backgraund.png);
+    background-repeat: repeat;
+    box-sizing: border-box;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size:30px;
+    color: #ffffff;
+}
+
+header .container .icon a{
+    margin-left: 23px;
+}
+
+.container {
+    margin:0 auto;
+    position:relative;
+    width: 100%;
+    max-width:950px;
+}
+
+main {
+    display:block;
+    width:100%;
+    position: relative;
+}
+
+nav{
+     background-color: #40312a;
+    padding-top: 20px;
+    height: 58px;
+    border-bottom: 1px solid #644e44;
+    box-sizing: border-box;
+    align-items: baseline;
+}
+
+nav ul{
+    display: inline-block;
+    float: left;
+    margin-top: 5px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    margin-right: 20px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color: #2c8897;
+}
+
+nav form{
+    float: right;
+    position: relative;
+}
+
+nav form label{
+    font-size:18px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+nav form input{
+    padding: 0 27px 0 5px;
+    margin-bottom: 5px;
+    width: 160px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    background-color:#297f90;
+}
+
+nav form button{
+    width: 20px;
+    height: 23px;
+    background-color: #297f90;
+    background-image: url(../images/Search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+}
+
+
+/*   Banner    */
+
+
+.banner{
+    height: 400px;
+/*    padding: 50px 0;*/
+    background-image: url(../images/banner/background.png);
+    border-bottom: 1px solid #e6d6b8;
+    position: relative;
+}
+
+.banner:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #bba67b;
+}
+
+.banner .container{
+    position: relative;
+}
+
+.banner .container .inner{
+    width: 100%;
+    padding: 32px 0 45px;
+    border-radius: 5px;
+    background-image: url(../images/banner/background_banner.png);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 2;
+}
+
+.banner .text{
+    margin-left: 40px;
+    max-width: 500px;
+}
+
+.banner .text h3{
+    margin-bottom: 30px;
+    font-size:26px;
+    color: #3da2b4;
+}
+
+.banner .text p{
+    margin-bottom: 45px;
+    font-size:12px;
+    color: #ffffff;
+    line-height: 18px;
+}
+.banner .text a{
+    margin-right: 20px;
+    font-size:18px;
+    color: #ffffff;
+    padding:15px 25px;
+    box-sizing: border-box;
+    background-image: url(../images/header/backgraund.png);
+    border-radius: 7px;
+}
+
+.banner .text a:last-child{
+    padding: 15px 33px;
+}
+
+.banner .container .photo_1{
+    position: absolute;
+    right: 120px;
+    bottom: -20px;
+    z-index: 3;
+}
+.banner .container .photo_2{
+    position: absolute;
+    right: 40px;
+    bottom: -10px;
+    z-index: 2;
+}
+
+.banner .subinner{
+    padding: 25px 0 15px;
+    width: 100%;
+    border-radius: 7px;
+    background-color: #298193;
+    position: absolute;
+    top:290px;
+    left: 0;
+}
+
+.banner .subinner p{
+    padding-left: 40px;
+    color: #ffffff;
+}
+
+.banner .subinner p a{
+    padding: 0 5px;
+    color: #ffffff;
+}
+
+.banner .subinner p a:after{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 210px;
+    width: 12px;
+    height: 12px;
+    background-color: #e0cfad;
+    transform: rotate(45deg)
+}
+.rum{
+    display: flex;
+    justify-content:center;
+    border-top:2px solid #bba67b;
+     border-bottom:1px solid #3a2c25;
+}
+
+.rum .content{
+    background-color: #f8eedf;
+}
+.rum .content .container{
+    margin: 50px 50px 0 0;
+
+    width: 550px;
+}
+
+.rum .content h3{
+    margin-bottom: 25px;
+    color: #2e91a0;
+    font-size:24px;
+}
+.rum .content h4{
+    font-size: 30px;
+    color: #40312a;
+    margin-bottom: 10px;
+}
+
+.rum .content section .date{
+    font-size: 12px;
+    color: #ce953c;
+    margin-bottom: 15px;
+}
+
+.rum .content section .text{
+    margin-top: 15px;
+    font-size:18px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.rum .content section .text a{
+    color: #247184;
+}
+
+.rum .content section .button{
+    padding: 8px 15px;
+    background-image: url(../images/banner/background_banner.png);
+    color: #ffffff;
+    border-bottom: 1px solid #b2988d;
+}
+
+.rum .sidebar{
+    background-color: #eeddc7;
+}
+
+
+
+.rum .sidebar .container{
+    margin-left: 40px;
+    width: 310px;
+}
+
+.sidebar .container .box{
+    margin-top: 50px;
+    width: 310px;
+    background-color: #267789;
+    border-radius: 4px;
+}
+
+.sidebar .container .box .menu a{
+    padding: 15px 12xp;
+}
+
+.sidebar .container .box p{
+    padding: 0 50px 0 15px;
+    font-size:12px;
+    color: #ffffff;
+}
+
+.sidebar .container img{
+    border:5px solid #febf5d;
+}
+
+.contact{
+    padding: 50px 0;
+    border-top: 1px solid #b2988d;
+    background-color: #3a2c25;
+}
+
+.contact .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    font-size: 13px;
+    color: #ffffff;
+    display:block;
+    width:100%;
+    margin:0 0 0;
+    padding:25px 0;
+    background-image: url(../images/background_footer.png);
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+footer .container ul{
+    display:inline-block;
+
+}
+
+footer .container ul li{
+    display: inline;
+}
+
+footer .container ul li a{
+    margin: 0 5px;
+    color:#ffffff;
+}
