@@ -78,16 +78,16 @@
 <!--         Rum      -->
                 <div class="rum">
                     <div class="content">
-                       <div class="container">
+                       <div class="inner">
                        <h3>FROM THE BLOG</h3>
-                        <section>
+                        <section class="blog_1">
                             <h4>Blog Post Name Here</h4>
                             <p class="date">October 15th 2010 | <a href="">7 comments</a></p>
                             <img src="./images/content/photo_1.png" alt="">
                             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, nulla vitae accumsan feugiat, odio nisi tristique odio, sit amet dictum quam augue vel urna. Proin eleifend, erat eu rhoncus suscipit, nisl velit pharetra leo <a href="">Continue Reading...</a>
                             </p>
                         </section>
-                        <section>
+                        <section class="blog_2">
                             <h4>Blog Post Name Here</h4>
                             <p class="date">October 15th 2010 | <a href="">7 comments</a></p>
                             <img src="./images/content/photo_2.png" alt="">
@@ -101,7 +101,7 @@
 <!--           Sidebar         -->
 
                     <div class="sidebar">
-                       <div class="container">
+                       <div class="inner">
                         <div class="box">
                                 <div class="menu">
                                     <a href="">Comments</a>
@@ -111,9 +111,15 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur accumsan feugiat!</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur accumsan feugiat!</p>
                         </div>
-                        <h3>WHO WE ARE</h3>
-                        <img src="./images/sidebar/photo_1.png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur accumsan feugiat... <a href="">Read More!</a></p>
+                        <section class="are">
+                            <h3>WHO WE ARE</h3>
+                            <img src="./images/sidebar/photo_1.png" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur accumsan feugiat... <a href="">Read More!</a></p>
+                        </section>
+                        <section class="sponsors">
+                            <img src="./images/sidebar/nike.png" alt="">
+                            <img src="./images/sidebar/adidas.png" alt="">
+                        </section>
                         </div>
                     </div>
                 </div>
@@ -126,20 +132,22 @@
                     <h4>GET A FREE QUOTE</h4>
                     <form>
                         <fieldset>
-                            <input type="text" placeholder="Your name">
-                            <input type="text" placeholder="Last Name">
+                            <input class="name" type="text" placeholder="Your name">
+                            <input class="last" type="text" placeholder="Last Name">
                             <textarea placeholder="Bla Bla Bla.."></textarea>
-                            <input type="text" placeholder="Your E-mail adress">
+                            <input class="adress" type="text" placeholder="Your E-mail adress">
                             <button type="button">SUBMIT</button>
                         </fieldset>
                     </form>
                 </div>
                 <div class="projects">
                     <h4>OUR RECENT PROJECTS</h4>
+                    <div class="icon">
                     <img src="./images/projects/photo_1.png" alt="">
                     <img src="./images/projects/photo_2.png" alt="">
                     <img src="./images/projects/photo_3.png" alt="">
                     <img src="./images/projects/photo_4.png" alt="">
+                    </div>
                     <a href="">PORTFOLIO</a>
                 </div>
                 <div class="twitter">
@@ -147,7 +155,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur accumsan feugiat! <a href="">4 Minutes Ago..</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur accumsan feugiat! <a href="">4 Minutes Ago..</a></p>
                     <p>Lorem ipsum dolor sit amet, consectetur accumsan feugiat! <a href="">4 Minutes Ago..</a></p>
-                    <a href="">FOLLOW US</a>
+                    <a class="button" href="">FOLLOW US</a>
                 </div>
                 </div>
             </section>
