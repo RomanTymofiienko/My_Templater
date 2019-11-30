@@ -119,13 +119,11 @@ header .container{
 padding-top: 30px;
 }
 
-.logo{
+.logo h1{
 
-    font-family: open sans;
-    font-weight: bold;
-    font-size: 16px;
+    font-size: 1px;
     display: inline;
-    color: #ffffff;
+    visibility: hidden;
 }
 
 .logo span{
@@ -171,6 +169,7 @@ main {
 }
 
 .banner .container{
+    position: relative;
 }
 
 .slider_inne{
@@ -195,26 +194,26 @@ main {
 }
 
 .banner .container .backfield{
-    margin-top: 50px;
-    margin-left: 45px;
     background-color: #212331;
     width: 860px;
     height:430px;
     box-shadow: -20px 20px #1a1b2b;
     border-radius: 5px;
     position: absolute;
+    top: 45px;
+    left: 45px;
 }
 
 .field{
     width: 463px;
-    height:248px;
+    height:348px;
     background-color: #f5f5f5;
     box-shadow: -20px 20px #656770;
     border-radius: 5px;
     position: absolute;
-    bottom: 70px;
+    top: 55px;
     right: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 .button{
@@ -263,7 +262,7 @@ main {
     content: "";
     background-color: #ffffff;
     position: absolute;
-    right: -13xp;
+    left: -13px;
     top: -6px;
     width: 13px;
     height: 13px;
@@ -409,6 +408,7 @@ main {
     height: 290px;
     background-color: #7b7b7b;;
     box-sizing: border-box;
+    opacity: 0;
 }
 
 .hidden:hover{
@@ -418,6 +418,8 @@ main {
     top: 0;
     left: 0;
     z-index: 2;
+    opacity: 1;
+    transition: opacity 0.2s;
 }
 
 
@@ -512,6 +514,8 @@ main {
 
 .customer .comments{
     display:block;
+    overflow: hidden;
+    align-items: center;
 }
 
 .customer .comments .photo{
@@ -520,13 +524,20 @@ main {
     border: 6px solid #ebebeb;
     border-radius: 50%;
     background-color: #7b7b7b;
+    float: left;
+    margin-right: 100px;
 }
 
 .customer .comments .text{
+    margin-top: 70px;
     text-align: left;
     font-family: open sans;
     font-weight: normal;
+    line-height: 30px;
     font-size: 18px;
+    float: left;
+    width: calc(100% - 376px);
+    font-style: italic;
 }
 
 .customer .comments .text p:last-child{
@@ -534,6 +545,7 @@ main {
     font-weight: bold;
     font-size: 24px;
     margin-top: 30px;
+    font-style: normal;
 }
 
 

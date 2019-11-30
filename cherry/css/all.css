@@ -221,11 +221,9 @@ header {
     align-items: center;
 }
 
-.heder_logo{
-    font-family: arialbold;
-    font-size: 30px;
-    text-transform: uppercase;
-    color: #a5adb8;
+h1{
+    font-size: 1px;
+    visibility: hidden;
 }
 
 .logo{
@@ -424,6 +422,7 @@ main {
     background-image: linear-gradient(180deg, #ae232d, #9c1a23);
     border: 5px solid #ffffff;
     box-shadow: 0 5px 15px -8px #000;
+    cursor: pointer;
 }
 
 .line {
@@ -558,27 +557,57 @@ ol {
     border-radius: 15px;
 }
 
-th,
-td {
+.table ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.table ul li{
+      padding: 13px 0;
     border: 1px solid #ffffff;
-    padding: 10px 0 10px 10px;
-}
-
-th {
     font-family: arialbold;
-    font-size: 12px;
-    color: #ffffff;
-    text-align: left;
-    background-color: #9c4757;
-}
-
-td {
     font-size: 12px;
     color: #9da4af;
     background-color: #282d33;
-
+    text-align: center;
+    box-sizing: border-box;
 }
 
+.table ul:first-child li{
+    padding: 13px 0;
+    color: #ffffff;
+    text-align: left;
+    background-color: #9c4757;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.table ul li:first-child{
+    width: 46px;
+}
+
+.table ul li:nth-child(2){
+    width: 136px;
+}
+
+.table ul li:nth-child(3){
+    width: 206px;
+}
+
+.table ul li:nth-child(4){
+    width: 187px;
+}
+
+.table ul li:nth-child(5){
+    width: 125px;
+    padding: 8px 0;
+}
+
+.table ul li a{
+    line-height:24px;
+    color: #d08b98;
+    text-decoration: underline;
+}
 
 /*Footer*/
 
@@ -634,9 +663,23 @@ font-size: 18px;
     width: 30%;
 }
 
-.local_lict{
-    margin-left: 15px;
-    list-style: url(../images/point.png);
+
+
+.local_lict li{
+        margin-left: 15px;
+     position: relative;
+}
+
+.local_lict li:before{
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    background-color: #974655;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
 }
 
 /*Location*/

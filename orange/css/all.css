@@ -115,9 +115,9 @@ header .container{
     position: relative;
 }
 
-.logo{
-    font-size:30px;
-    color: #ffffff;
+h1{
+    font-size:1px;
+    visibility: hidden;
 }
 
 header .container .icon{
@@ -327,7 +327,7 @@ nav form button{
     color: #ffffff;
 }
 
-.banner .subinner p a:after{
+.banner .subinner p a:last-child:after{
     content: "";
     position: absolute;
     top: 50px;
@@ -337,16 +337,54 @@ nav form button{
     background-color: #e0cfad;
     transform: rotate(45deg)
 }
+
+.banner .subinner p a:first-child:after{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    width: 12px;
+    height: 12px;
+    background-color: #e0cfad;
+    transform: rotate(45deg)
+}
+
+/*   Rum  */
+
+
 .rum{
     display: flex;
     justify-content:center;
     border-top:2px solid #bba67b;
-     border-bottom:1px solid #3a2c25;
+    border-bottom:1px solid #3a2c25;
+    overflow: hidden;
 }
 
 .rum .content{
     background-color: #f8eedf;
+    position: relative;
+    z-index: 2;
 }
+.rum .content:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 600px;
+    width: 1000000000px;
+    height: 100%;
+    background-color: #f8eedf;
+    z-index: 1;
+}
+.rum .content:after{
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+    background: linear-gradient( to top, #f8eedf, #fff7ea);
+}
+
 
 .rum .content .inner{
     margin: 50px 50px 0 0;
@@ -403,6 +441,7 @@ nav form button{
 .rum .sidebar{
     background:linear-gradient(to top, #f8eedf, #eeddc7);
     position: relative;
+       align-items: stretch;
 }
 
 .rum .sidebar:before{
@@ -412,41 +451,98 @@ nav form button{
     position: absolute;
     top:0;
     left: 0;
-    background: linear-gradient( to top, #f8eedf, #fff7ea );
+    background: linear-gradient(  to top, #fff7ea, #dfcdb2 );
 }
 
 .rum .sidebar:after{
     content: "";
-    width: 1px;
+    width: 10000000000px;
     height: 100%;
     position: absolute;
     top:0;
-    left: 1px;
-    background: linear-gradient( to top, #fff7ea, #dfcdb2 );
+    left: 350px;
+    background: linear-gradient( to top, #f8eedf, #eeddc7 );
 }
 
 .rum .sidebar .inner{
-    margin: 50px 0 0 40px;
+    margin: 50px 0 50px 40px;
     width: 310px;
+       align-items: stretch;
 }
 
 .sidebar .inner .box{
-    margin-top: 50px;
-    width: 310px;
+    width: 290px;
     height: 200px;
     background-color: #267789;
-    border-radius: 4px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sidebar .inner .box .menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0;
 }
 
 .sidebar .inner .box .menu a{
-    padding: 15px 12px;
+    margin: 0 0 0;
+    padding: 10px 16px;
+    color: #ffffff;
+    background-color: #40312a;
+    box-sizing: border-box;
+    position: relative;
 }
 
+.sidebar .inner .box .menu a:first-child:hover{
+    background-color: #267789;
+}
+
+.sidebar .inner .box .menu a:nth-child(2):hover{
+     background-color: #267789;
+}
+
+.sidebar .inner .box .menu a:last-child:hover{
+    background-color: #267789;
+}
+
+.sidebar .inner .box .menu a:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #257386;
+}
+
+.sidebar .inner .box .menu a:after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #134a56;
+}
+
+
 .sidebar .inner .box p{
-    margin: 0 50px 0 15px;
     font-size:12px;
+    line-height: 18px;
     color: #ffffff;
 }
+
+.sidebar .inner .box .text_1{
+    padding: 20px 15px 15px;
+    border-bottom: 1px solid #134a56;
+}
+
+.sidebar .inner .box .text_2{
+     padding: 15px 15px;
+    border-top: 1px solid #3196af;
+}
+
 
 .sidebar .inner .are{
     margin: 40px 0 100px;
@@ -456,6 +552,9 @@ nav form button{
     margin-bottom: 30px;
     font-size: 22px;
     color: #2d8c9b;
+    background:  linear-gradient( to top, #267688, #3096a4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .sidebar .inner .are img{
@@ -483,25 +582,39 @@ nav form button{
     position: relative;
 }
 
-.sponsors img:last-child:before{
+.sponsors:last-child:before{
     content: "";
     width: 1px;
-    height: 52px;
+    height: 85px;
     position: absolute;
-    top:0;
-    left: -10px;
-    background: linear-gradient( to top, #f7b958, #d0bfa4, #f7b958 );
+    top: 50%;
+    left: calc(50% - 1px);
+    transform:translate3d(0, -50%, 0);
+    background: linear-gradient( to top, #f7eede, #ffffff, #f7eede );
 }
 
-.sponsors img:last-child:after{
+.sponsors:last-child:after{
     content: "";
     width: 1px;
-    height: 52px;
+    height: 85px;
     position: absolute;
-    top: 0;
-    left: -11px;
-    background: linear-gradient( to top, #f7b958, #ffd593, #f7b958 );
+    top: 50%;
+    left: 50%;
+    transform:translate3d(0, -50%, 0);
+    background: linear-gradient( to top, #f5eada, #d1c0a6, #f5eada );
 }
+
+
+.sidebar .inner h4{
+    margin-bottom: 30px;
+    font-size: 22px;
+    color: #ffffff;
+    background:  linear-gradient( to top, #267688, #3096a4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*   Contact   */
 
 .contact{
     padding: 50px 0;
@@ -518,6 +631,9 @@ nav form button{
     font-size: 22px;
     color: #2e8e9d;
     margin-bottom: 30px;
+    background:  linear-gradient( to top, #267688, #3096a4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .contact .container .get{
@@ -640,4 +756,7 @@ footer .container ul li{
 footer .container ul li a{
     margin: 0 5px;
     color:#ffffff;
+}
+footer .container ul li a:hover{
+    text-decoration: underline;
 }
