@@ -20,7 +20,7 @@ $(function() {
 
     $('.arrow').click(function () {
     $('html, body').animate({
-        scrollTop: $("header").offset().top
+        scrollTop: $("#wrapper").offset().top
     }, 2000);
 });
 

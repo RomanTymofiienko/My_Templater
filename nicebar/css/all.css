@@ -126,8 +126,13 @@ header {
     height: 121px;
     width:100%;
     display:block;
-    position:relative;
+    position:sticky;
+    top: 0;
+    left: 0;
+    z-index: 4;
     color: #282930;
+    background-color: #ffffff;
+
 }
 
 header:before{
@@ -152,9 +157,8 @@ header .container ul{
     justify-content:flex-end;
 }
 
-.layout {
+header .layout {
     margin:0 auto;
-    position:relative;
     width:1175px;
     display: flex;
     justify-content: space-between;
