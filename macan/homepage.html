@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/all.css" type="text/css" />
     <link rel="stylesheet" href="css/fonts.css" type="text/css" />
 
-    <script type="text/javascript" src="js/main.js"></script>
+
     <title>MACAN</title>
 </head>
 
@@ -22,19 +22,19 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a data-scroll="#content" href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#">Services</a>
+                            <a data-scroll="#services" href="#">Services</a>
                         </li>
                         <li>
-                            <a href="#">Work</a>
+                            <a data-scroll="#worcs" href="#">Work</a>
                         </li>
                         <li>
-                            <a href="#">Testimonials</a>
+                            <a data-scroll="#testimonials" href="#">Testimonials</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a data-scroll="#contact" href="#">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -58,7 +58,7 @@
 
                 <!--     Services           -->
 
-                <section class="our_services">
+                <section id="services" class="our_services">
                     <div class="container">
                         <h3 class="title">Our Services</h3>
                         <p class="subtitle">our awesome services</p>
@@ -94,7 +94,7 @@
 
                 <!-- Our Greatest Works               -->
 
-                <section class="works">
+                <section id="worcs" class="works">
                         <h3>Our Greatest Works</h3>
                         <p>come from awesome imagination</p>
 
@@ -164,7 +164,7 @@
 
                 <!--    Customer Say     -->
 
-                <section class="customer">
+                <section id="testimonials" class="customer">
                     <div class="container">
                         <h3>What Our Happy Customer Say</h3>
                         <p class="subtitle">lorem ipsum dolor sit amet</p>
@@ -193,7 +193,7 @@
                 </section>
 
                 <!--    Contact            -->
-                <section class="contact">
+                <section id="contact" class="contact">
                     <div class="container">
                     <h3>Contact</h3>
                     <div class="subtitle">Let's talk business, get in touch!</div>
@@ -222,7 +222,7 @@
                     </fieldset>
                 </form>
             </div>
-            <div class="scroll"></div>
+            <div class="arrow"></div>
         </section>
 
 
@@ -235,4 +235,6 @@
         </footer>
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body></html>

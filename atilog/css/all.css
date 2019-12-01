@@ -104,7 +104,10 @@ input:focus::-webkit-input-placeholder{color:#ebedec;}
 header {
     width:100%;
     display:block;
-    position:relative;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 .layout {
     margin:0 auto;

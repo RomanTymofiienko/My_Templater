@@ -1,28 +1,50 @@
-$(function() {
+$(document).ready(function() {
 
 
 /* Scrol*/
 
-//    $("[data-scroll]").on("clik", function(event){
-//        event.preventDefault();
-//
-//        let elementId = $(this).data("scroll");
-//        let elemanOffset = $(elementId).offset().top;
-//
-//
-//        $("html, body").animate({
-//            scrollTop:elemanOffset - 100
-//        },700)
-//
-//    })
-
-    $('.head_column').click(function (event) {
+    $("[data-scroll]").click(function(event){
         event.preventDefault();
-        $('html, body').animate({
-            scrollTop: $('header').offset().top
-        }, 2000);
+
+        let elementId = $(this).data("scroll");
+        let elemanOffset = $(elementId).offset().top;
+
+
+        $("html, body").animate({
+            scrollTop:elemanOffset - 100
+        },700)
+
+    })
+
+//    Slider
+
+    $(".next").click(function(){
+        var currentImage = $(".img.curry");
+        var currentImageIndex = $(".img.curry").index();
+        var nextImageIndex = currentImageIndex + 1;
+        var nextImage = $(".img").eq(nextImageIndex);
+        currentImage.fadeOut(1000);
+        currentImage.removeClass("curry");
+
+        if(nextImageIndex == ($(".img:last").index()+1)){
+            $(".img").eq(0).fadeIn(1000);
+            $(".img").eq(0).addClass("curry");
+        } else {
+            nextImage.fadeIn(1000);
+            nextImage.addClass("curry");
+        }
     });
 
-});
+     $(".prev").click(function(){
+        var currentImage = $(".img.curry");
+        var currentImageIndex = $(".img.curry").index();
+        var prevImageIndex = currentImageIndex - 1;
+        var prevImage = $(".img").eq(prevImageIndex);
 
+        currentImage.fadeOut(1000);
+        currentImage.removeClass("curry");
+        prevImage.fadeIn(1000);
+        prevImage.addClass("curry");
+     });
+});
 

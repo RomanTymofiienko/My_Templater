@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width; initial-scale=1" />
     <link rel="stylesheet" href="css/all.css" type="text/css" />
     <link rel="stylesheet" href="css/fonts.css" type="text/css" />
-
-    <script type="text/javascript" src="js/main.js"></script>
     <title>SITENAME</title>
 </head>
 
@@ -32,7 +30,7 @@
                 <div class="container">
                     <ul>
                         <li>
-                            <a href="#">HOME</a>
+                            <a href="#" data-scroll="#wrapper">HOME</a>
                         </li>
                         <li>
                             <a href="#">ABOUT</a>
@@ -41,10 +39,10 @@
                             <a href="#">PORTFOLIO</a>
                         </li>
                         <li>
-                            <a href="#">BLOG</a>
+                            <a href="#" data-scroll="#blog">BLOG</a>
                         </li>
                         <li>
-                            <a href="#">CONTACT</a>
+                            <a href="#" data-scroll="#contact">CONTACT</a>
                         </li>
                     </ul>
                     <form>
@@ -80,7 +78,7 @@
             </section>
 <!--         Rum      -->
                 <div class="rum">
-                    <div class="content">
+                    <div id="blog" class="content">
                        <div class="inner">
                        <h3>FROM THE BLOG</h3>
                         <section class="blog_1">
@@ -130,7 +128,7 @@
 
 <!--        Contact        -->
 
-            <section class="contact">
+            <section id="contact" class="contact">
                 <div class="container">
                 <div class="get">
                     <h4>GET A FREE QUOTE</h4>
@@ -180,4 +178,6 @@
             </div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body></html>

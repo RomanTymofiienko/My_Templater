@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width; initial-scale=1" />
     <link rel="stylesheet" href="css/all.css" type="text/css" />
     <link rel="stylesheet" href="css/fonts.css" type="text/css" />
-
-    <script type="text/javascript" src="js/main.js"></script>
     <title>ATILOG</title>
 </head>
 
@@ -18,19 +16,19 @@
                 <nav>
                     <ul class="nav">
                         <li class="nav_link">
-                            <a class="link" href="#">Услуги</a>
+                            <a class="link" href="#" data-scroll="#">Услуги</a>
                         </li>
                         <li class="nav_link">
-                            <a class="link" href="#">О нас</a>
+                            <a class="link" href="#" data-scroll="#">О нас</a>
                         </li>
                         <li class="nav_link">
-                            <a class="link" href="#">Портфолио</a>
+                            <a class="link" href="#" data-scroll="#portfolio">Портфолио</a>
                         </li>
                         <li class="nav_link">
-                            <a class="link" href="#">С чем работаем</a>
+                            <a class="link" href="#" data-scroll="#">С чем работаем</a>
                         </li>
                         <li class="nav_link">
-                            <a class="link" href="#">Контакты</a>
+                            <a class="link" href="#" data-scroll="#contact">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -41,7 +39,7 @@
                 <section class="banner">
                     <p>atilog</p>
                 </section>
-                <section class="portfolio">
+                <section id="portfolio" class="portfolio">
                     <div class="container">
                         <div class="head">
                             <h3 class="head_text">Портфолио</h3>
@@ -106,8 +104,8 @@
                     <h3 class="head_text">Контакты</h3>
                     <div class="head_line">head_line</div>
                 </div>
-                <div class="contact">
-                    <div class="write">
+                <div id="contact" class="contact">
+                    <div  class="write">
                         <div class="weite_head">
                             <label class="Write_to_us">Написать нам</label>
                             <div class="footer_line">footer_line</div>
@@ -165,6 +163,8 @@
             </div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

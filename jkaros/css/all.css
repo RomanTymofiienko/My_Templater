@@ -307,11 +307,15 @@ main {
 
 }
 
-.slider_img {
+.slider_inner .img {
+    display: none;
+}
+
+.slider_inner .img.curry{
     display: block;
 }
 
-.scroll_left {
+.prev {
     position: absolute;
     height: 35px;
     width: 35px;
@@ -321,7 +325,7 @@ main {
     border-radius: 50%;
 }
 
-.scroll_left:before{
+.prev:before{
     content: "";
     position: absolute;
     top: 14px;
@@ -332,7 +336,7 @@ main {
     background-color: #000000;
 }
 
-.scroll_left:after{
+.prev:after{
     content: "";
     position: absolute;
     bottom: 14px;
@@ -343,7 +347,7 @@ main {
     background-color: #000000;
 }
 
-.scroll_right {
+.next {
     position: absolute;
     height: 35px;
     width: 35px;
@@ -353,7 +357,7 @@ main {
     border-radius: 50%;
 }
 
-.scroll_right:before{
+.next:before{
     content: "";
     position: absolute;
     top: 14px;
@@ -364,7 +368,7 @@ main {
     background-color: #000000;
 }
 
-.scroll_right:after{
+.next:after{
     content: "";
     position: absolute;
     bottom: 14px;

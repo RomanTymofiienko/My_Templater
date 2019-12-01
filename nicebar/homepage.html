@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width; initial-scale=1" />
     <link rel="stylesheet" href="css/all.css" type="text/css" />
     <link rel="stylesheet" href="css/fonts.css" type="text/css" />
-
-    <script type="text/javascript" src="js/main.js"></script>
     <title>TITLE</title>
 </head>
 
@@ -16,11 +14,11 @@
         <header>
             <div class="container">
                 <ul>
-                    <li><a href=""><img src="./images/Search.jpg" alt=""></a></li>
-                    <li><a href=""><img src="./images/Search.jpg" alt=""></a></li>
-                    <li><a href=""><img src="./images/Search.jpg" alt=""></a></li>
-                    <li><a href=""><img src="./images/Search.jpg" alt=""></a></li>
-                    <li><a href=""><img src="./images/Search.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/Search.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/Search.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/Search.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/Search.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/Search.jpg" alt=""></a></li>
                 </ul>
             </div>
             <div class="layout">
@@ -31,19 +29,19 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">Главная</a>
+                            <a href="#" data-scroll="#wrapper">Главная</a>
                         </li>
                         <li>
-                            <a href="#">О нас</a>
+                            <a href="#" data-scroll="#nace">О нас</a>
                         </li>
                         <li>
-                            <a href="#">Сервис </a>
+                            <a href="#" data-scroll="#menu">Сервис </a>
                         </li>
                         <li>
-                            <a href="#">контакты</a>
+                            <a href="#" data-scroll="#contact">контакты</a>
                         </li>
                         <li>
-                            <a href="#">помощь</a>
+                            <a href="#" data-scroll="#contact">помощь</a>
                         </li>
                         <li>
                             <a href=""><img src="./images/Search.jpg" alt=""></a>
@@ -70,7 +68,7 @@
 
                 <!--      Nace     -->
 
-                <section class="nace">
+                <section id="nace" class="nace">
                     <div class="container">
                         <h3>О nice bar</h3>
                         <div class="inner">
@@ -147,7 +145,7 @@
 
     <!--      Menu     -->
 
-    <section class="menu">
+    <section id="menu" class="menu">
         <div class="container">
             <h3>Наше меню</h3>
             <div class="inner">
@@ -285,7 +283,7 @@
 
     <!--        Contact     -->
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <h3>наши контакты</h3>
         <p class="subtitle">Как мы можем помочь тебе?</p>
         <div class="info">
@@ -324,6 +322,8 @@
         </div>
     </footer>
     </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
