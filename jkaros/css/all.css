@@ -209,7 +209,7 @@ h3 {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-     overflow: hidden;
+    overflow: hidden;
 
 }
 
@@ -226,7 +226,7 @@ h3 {
     position:sticky;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 4;
 }
 
 .header:after{
@@ -298,31 +298,29 @@ main {
     display: block;
     position: relative;
 }
+.slider .container{
+         margin-top: 60px;
+}
 
 .slider_inner {
     width: 100%;
     overflow: hidden;
-      margin-top: 60px;
+    position: relative;
     display: block;
 
-}
-
-.slider_inner .img {
-    display: none;
-}
-
-.slider_inner .img.curry{
-    display: block;
 }
 
 .prev {
     position: absolute;
     height: 35px;
     width: 35px;
-    top: calc(50% + 17px);
+    top: calc(50%);
     left: 10px;
     background: linear-gradient(to top, #e6e6e6, #fbfbfb);
     border-radius: 50%;
+    border: none;
+     cursor: pointer;
+    z-index: 3;
 }
 
 .prev:before{
@@ -351,10 +349,13 @@ main {
     position: absolute;
     height: 35px;
     width: 35px;
-    top: calc(50% + 17px);
+    top: calc(50%);
     right: 10px;
-     background: linear-gradient(to top, #e6e6e6, #fbfbfb);
+    background: linear-gradient(to top, #e6e6e6, #fbfbfb);
     border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
 }
 
 .next:before{
@@ -495,11 +496,20 @@ main {
 }
 
     .line{
-        width: 960px;
+        width: 100%;
+        max-width: 960px;
         height: 3px;
         background-image: url(../images/line.png);
         background-repeat: repeat-x;
     }
+
+#nth_2{
+    display: none;
+}
+
+#last{
+    display: none;
+}
 
 /*Projecets*/
 
@@ -788,9 +798,26 @@ input {
 }
 
 @media (max-width: 980px){
-      .container{
-        margin: 0 5px;
+    .container{
+        width: 96%;
+    }
+
 }
+    footer .inner{
+    margin: 0 5px;
+        overflow: hidden;
+    }
+
+    .information img{
+
+        margin: 0 auto 20px;
+    }
+
+/*      <!-- Projects -->*/
+
+    .project_items{
+        justify-content: space-around;
+    }
 
 @media (max-width: 730px) {
 
@@ -823,7 +850,7 @@ input {
     .logo_icon{
         width: 33.33333%;
     }
-}
+
 
 /*     <!-- Services -->*/
 
@@ -833,9 +860,22 @@ input {
     }
 
     .information img{
-        text-align: center;
+           margin: 0 auto 20px;
     }
 
     .information_text{
         margin-top: 20xp;
+}
+
+    .blog_news{
+        display: block;
+    }
+
+    .news{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+
 }
