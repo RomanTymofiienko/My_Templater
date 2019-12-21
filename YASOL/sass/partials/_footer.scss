@@ -1,0 +1,113 @@
+footer {
+    display: block;
+    width: 100%;
+    margin: 0 0 0;
+    padding: 0 0 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    h3 {
+        img {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        p {
+            display: inline-block;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 108px;
+            text-align: center;
+
+            color: #ffffff;
+        }
+    }
+
+    form {
+        padding: 42px 48px 104px 46px;
+        background-image: url(../images/footer/form.png);
+        background-repeat: no-repeat;
+        float: right;
+        position: relative;
+        z-index: 3;
+
+        p {
+            margin-bottom: 60px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 35px;
+            text-transform: uppercase;
+
+            color: #000000;
+        }
+
+        input {
+            margin-bottom: 20px;
+            display: block;
+            width: 519px;
+            height: 65px;
+            border-radius: 80px;
+            background-color: #fdfdfd;
+            border: none;
+        }
+
+        select {
+            margin-bottom: 71px;
+            display: block;
+            width: 517px;
+            height: 60px;
+            border: none;
+        }
+
+        button {
+            width: 285px;
+            height: 102px;
+            background: #171717;
+            box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            border: none;
+            margin: 0 0 0 auto;
+
+            a {
+                p {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 30px;
+                    line-height: 35px;
+                    text-align: center;
+
+                    color: #ffffff;
+                }
+            }
+        }
+
+
+    }
+
+    .background {
+        position: absolute;
+        top: 110px;
+        left: 0;
+        z-index: 1;
+
+    }
+
+    .contacts {
+        width: 556px;
+        height: 352px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 4;
+        background-image: url(../images/contacts/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        .social{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}

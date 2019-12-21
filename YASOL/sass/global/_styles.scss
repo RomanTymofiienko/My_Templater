@@ -1,0 +1,29 @@
+/* wrapper */
+#wrapper {
+    display:block;
+    position:relative;
+    width:100%;
+    height:100%;
+    background-color: #171717;
+
+}
+.layout {
+    margin:0 auto;
+    position:relative;
+    width:1110px;
+}
+main {
+    display:block;
+    width:100%;
+    position: relative;
+
+}
+#content{
+    position: relative;
+}
+#sidebar {
+    position: relative;
+}
+aside{
+    position: relative;
+}

@@ -1,0 +1,74 @@
+.about {
+    position: relative;
+    text-align: center;
+    margin: 100px 0 200px;
+    .background{
+        position:absolute;
+        top: 0;
+        left: calc(50% - 355px);
+        z-index: 2;
+
+    }
+
+    h3 {
+        text-align: center;
+        position: relative;
+        margin-bottom: 100px;
+        z-index: 3;
+
+        p {
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 108px;
+            color: #ffffff;
+        }
+
+        img {
+            display: inline-block;
+            margin-right: 15px;
+        }
+    }
+
+    .text {
+        width: 675px;
+        margin: 0 auto 50px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: justify;
+        color: #ffffff;
+        position: relative;
+        z-index: 3;
+
+    }
+    .puzzle{
+        img{
+            position: absolute;
+            z-index: 1;
+            &:first-child {
+                top: 0;
+                left: 0;
+            }
+            &:nth-child(2){
+                top:50%;
+                left: 0;
+                filter: blur(20px);
+            }
+            &:nth-child(3){
+                top:calc(50% + 80px);
+                right: 0;
+                filter: blur(30px);
+            }
+            &:last-child{
+                bottom: -120px;
+                left: 150px;
+            }
+        }
+    }
+}

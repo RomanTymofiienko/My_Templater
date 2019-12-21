@@ -1,0 +1,692 @@
+/* SCSS Compiled */
+/***************************************************              GENERAL RESET STYLES             ***************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+*:focus {
+  outline: none; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  border-style: none;
+  max-width: 100%; }
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+input, textarea, select {
+  vertical-align: middle;
+  color: #000;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+input::-webkit-input-placeholder {
+  color: #ebedec; }
+
+input:focus::-webkit-input-placeholder {
+  color: #ebedec; }
+
+/*@media*/
+/* @media (min-width: 1921px){} 													QHD \ UHD
+@media (min-width: 1600px) and (max-width: 1919px) {}	HD +
+@media (min-width: 1440px) and (max-width: 1599px) {}	macbook
+@media (min-width: 1360px) and (max-width: 1439px) {}	HD
+@media (min-width: 1280px) and (max-width: 1359px) {} IPAD2
+@media (min-width: 1024px) and (max-width: 1279px) {} IPAD
+@media (min-width: 896px) and (max-width: 1023px) {}	Ip Xs max horizontal
+@media (min-width: 812px) and (max-width: 895px) {}		Ip Xs horizontal
+@media (min-width: 768px) and (max-width: 811px) {}		Tablet
+@media (min-width: 736px) and (max-width: 767px) {}		Ip 6,7,8 Plus horizontal
+@media (min-width: 667px) and (max-width: 735px) {}		Ip 6,7,8 horizontal
+@media (min-width: 568px) and (max-width: 666px) {}		Ip 5 horizontal
+@media (min-width: 480px) and (max-width: 567px) {}		Ip 4 horizontal
+@media (min-width: 414px) and (max-width: 479px) {}		Ip 6,7,8
+@media (min-width: 320px) and (max-width: 413px) {}		Ip 4,5 */
+/*@media end*/
+/*usage  @include font-size(13);*/
+/* Brand Colors ------------------------------------------------*/
+/* wrapper */
+#wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #171717; }
+
+.layout {
+  margin: 0 auto;
+  position: relative;
+  width: 1110px; }
+
+main {
+  display: block;
+  width: 100%;
+  position: relative; }
+
+#content {
+  position: relative; }
+
+#sidebar {
+  position: relative; }
+
+aside {
+  position: relative; }
+
+header {
+  width: 100%;
+  display: block;
+  position: relative; }
+  header .box {
+    padding-bottom: 125px;
+    background-image: url(../images/header/background.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    z-index: 3; }
+  header ul {
+    display: inline-block; }
+    header ul li {
+      display: inline-block;
+      margin: 23px 19px 0 0; }
+  header h1 {
+    font-size: 1px;
+    visibility: hidden; }
+  header .logo {
+    margin: 57px 0 0 130px; }
+  header .language {
+    position: absolute;
+    top: 159px;
+    right: 67px; }
+    header .language p {
+      margin-left: 17px;
+      padding: 18px 0 0 0;
+      display: inline-block;
+      width: 53px;
+      height: 61px;
+      background-image: url(../images/puzzle/language.png);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-position: top;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center; }
+      header .language p:last-child {
+        background-image: url(../images/puzzle/language_2.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-position: top; }
+        header .language p:last-child a {
+          color: #ffffff; }
+  header .text {
+    margin-top: 75px;
+    padding-left: 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 70px;
+    color: #ffffff;
+    -webkit-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg); }
+  header .button {
+    position: absolute;
+    bottom: 150px;
+    left: 110px;
+    padding-top: 35px;
+    width: 285px;
+    height: 102px;
+    background: #F3563B;
+    -webkit-box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    header .button a {
+      padding: 35px 30px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 35px;
+      color: #ffffff;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+  header nav {
+    margin: 0 73px 0;
+    text-align: right; }
+    header nav ul li {
+      display: block; }
+      header nav ul li a {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 42px; }
+        header nav ul li a:hover {
+          font-size: 40px; }
+  header .puzzle img {
+    position: absolute;
+    z-index: 1; }
+    header .puzzle img:first-child {
+      top: 20px;
+      left: calc(50% - 30px);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    header .puzzle img:nth-child(2) {
+      top: calc(50% + 180px);
+      left: 0;
+      -webkit-filter: blur(17px);
+      filter: blur(17px); }
+    header .puzzle img:last-child {
+      bottom: 0;
+      left: calc(50% + 30px);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      -webkit-filter: blur(17px);
+      filter: blur(17px); }
+
+footer {
+  display: block;
+  width: 100%;
+  margin: 0 0 0;
+  padding: 0 0 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden; }
+  footer h3 img {
+    display: inline-block;
+    margin-right: 10px; }
+  footer h3 p {
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 108px;
+    text-align: center;
+    color: #ffffff; }
+  footer form {
+    padding: 42px 48px 104px 46px;
+    background-image: url(../images/footer/form.png);
+    background-repeat: no-repeat;
+    float: right;
+    position: relative;
+    z-index: 3; }
+    footer form p {
+      margin-bottom: 60px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 35px;
+      text-transform: uppercase;
+      color: #000000; }
+    footer form input {
+      margin-bottom: 20px;
+      display: block;
+      width: 519px;
+      height: 65px;
+      border-radius: 80px;
+      background-color: #fdfdfd;
+      border: none; }
+    footer form select {
+      margin-bottom: 71px;
+      display: block;
+      width: 517px;
+      height: 60px;
+      border: none; }
+    footer form button {
+      width: 285px;
+      height: 102px;
+      background: #171717;
+      -webkit-box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.25);
+      box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      border: none;
+      margin: 0 0 0 auto; }
+      footer form button a p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: #ffffff; }
+  footer .background {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    z-index: 1; }
+  footer .contacts {
+    width: 556px;
+    height: 352px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    background-image: url(../images/contacts/background.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    footer .contacts .social {
+      position: absolute;
+      top: 0;
+      left: 0; }
+
+.about {
+  position: relative;
+  text-align: center;
+  margin: 100px 0 200px; }
+  .about .background {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 355px);
+    z-index: 2; }
+  .about h3 {
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+    z-index: 3; }
+    .about h3 p {
+      display: inline-block;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 108px;
+      color: #ffffff; }
+    .about h3 img {
+      display: inline-block;
+      margin-right: 15px; }
+  .about .text {
+    width: 675px;
+    margin: 0 auto 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: justify;
+    color: #ffffff;
+    position: relative;
+    z-index: 3; }
+  .about .puzzle img {
+    position: absolute;
+    z-index: 1; }
+    .about .puzzle img:first-child {
+      top: 0;
+      left: 0; }
+    .about .puzzle img:nth-child(2) {
+      top: 50%;
+      left: 0;
+      -webkit-filter: blur(20px);
+      filter: blur(20px); }
+    .about .puzzle img:nth-child(3) {
+      top: calc(50% + 80px);
+      right: 0;
+      -webkit-filter: blur(30px);
+      filter: blur(30px); }
+    .about .puzzle img:last-child {
+      bottom: -120px;
+      left: 150px; }
+
+.cources {
+  margin-bottom: 100px;
+  position: relative; }
+  .cources h3 {
+    position: relative;
+    text-align: center; }
+    .cources h3 img {
+      display: inline-block;
+      margin-right: 7px; }
+    .cources h3 p {
+      display: inline-block;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 108px;
+      text-align: center;
+      color: #ffffff; }
+  .cources .inner {
+    position: relative;
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .cources .inner ul {
+      width: 400px;
+      text-align: center;
+      margin-top: 67px; }
+      .cources .inner ul li {
+        margin-bottom: 17px;
+        width: 400px;
+        height: 86px;
+        background: #C4C4C4;
+        opacity: 0.5;
+        border-radius: 80px; }
+        .cources .inner ul li:hover {
+          background-color: #EDECEC;
+          opacity: 1; }
+        .cources .inner ul li a {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 60px;
+          line-height: 90px;
+          text-align: center;
+          color: #F3563B; }
+    .cources .inner .text {
+      padding-left: 112px;
+      width: 645px;
+      background-image: url(../images/cources/background.png);
+      background-position: top;
+      background-repeat: no-repeat;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      .cources .inner .text h4 {
+        margin: 66px 0 20px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: left;
+        text-transform: uppercase;
+        color: #040404; }
+      .cources .inner .text p {
+        width: 523px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: start;
+        color: #171717; }
+      .cources .inner .text .button {
+        margin: 20px 37px 91px auto;
+        padding-top: 31px;
+        width: 285px;
+        height: 102px;
+        background: #F3563B;
+        -webkit-box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.25);
+        box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+        .cources .inner .text .button a {
+          padding: 30px 110px 30px 110px;
+          font-family: 'Roboto', sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 35px;
+          text-align: center;
+          color: #ffffff;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .cources .puzzle img {
+    position: absolute;
+    z-index: 1; }
+    .cources .puzzle img:first-child {
+      bottom: -60px;
+      left: -30px;
+      -webkit-filter: blur(20px);
+      filter: blur(20px); }
+    .cources .puzzle img:last-child {
+      top: 70px;
+      right: 0;
+      -webkit-filter: blur(15px);
+      filter: blur(15px); }
+
+.directions {
+  margin-bottom: 174px;
+  position: relative; }
+  .directions h3 {
+    position: relative;
+    text-align: center; }
+    .directions h3 img {
+      display: inline-block;
+      margin-right: 7px; }
+    .directions h3 p {
+      display: inline-block;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 108px;
+      text-align: center;
+      color: #ffffff; }
+  .directions .slider {
+    position: relative;
+    z-index: 3; }
+    .directions .slider .slider_inner {
+      margin: 0 auto;
+      position: relative;
+      width: 550px;
+      height: 551px;
+      background-image: url(../images/directions/background.png);
+      background-repeat: no-repeat; }
+      .directions .slider .slider_inner p {
+        position: absolute;
+        top: 104px;
+        left: 77px;
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 62px;
+        line-height: 73px;
+        color: #171717; }
+      .directions .slider .slider_inner img {
+        position: absolute;
+        bottom: 145px;
+        left: 172px; }
+    .directions .slider .prev a {
+      background-color: #fffcfc;
+      width: 50px;
+      height: 13px;
+      position: absolute;
+      top: 50%;
+      left: 170px;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+      .directions .slider .prev a:after {
+        content: "";
+        background-color: #fffcfc;
+        width: 50px;
+        height: 13px;
+        position: absolute;
+        top: 19px;
+        left: -19px;
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg); }
+    .directions .slider .next a {
+      background-color: #fffcfc;
+      width: 50px;
+      height: 13px;
+      position: absolute;
+      top: 50%;
+      right: 170px;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+      .directions .slider .next a:after {
+        content: "";
+        background-color: #fffcfc;
+        width: 50px;
+        height: 13px;
+        position: absolute;
+        top: 19px;
+        right: -19px;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg); }
+    .directions .slider .circle {
+      margin-top: 39px;
+      position: relative;
+      top: 0;
+      left: calc(50% - 50px);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 30px;
+      height: 30px;
+      background-color: #ffffff;
+      border: 3px solid #000000;
+      border-radius: 50%; }
+      .directions .slider .circle:before {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: -77px;
+        width: 30px;
+        height: 30px;
+        background-color: #ffffff;
+        border: 3px solid #000000;
+        border-radius: 50%; }
+      .directions .slider .circle:after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        right: -77px;
+        width: 30px;
+        height: 30px;
+        background-color: #ffffff;
+        border: 3px solid #000000;
+        border-radius: 50%; }
+  .directions .puzzle img {
+    position: absolute;
+    z-index: 1; }
+    .directions .puzzle img:first-child {
+      bottom: -90px;
+      right: 190px; }
+    .directions .puzzle img:nth-child(2) {
+      top: 110px;
+      left: 0;
+      -webkit-filter: blur(15px);
+      filter: blur(15px); }
+    .directions .puzzle img:last-child {
+      top: 130px;
+      right: 0;
+      -webkit-filter: blur(20px);
+      filter: blur(20px); }
+
+.formats {
+  text-align: center;
+  margin-bottom: 43px;
+  position: relative; }
+  .formats h3 p {
+    margin-left: 10px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 108px;
+    text-align: center;
+    color: #ffffff; }
+  .formats h3 img {
+    display: inline-block; }
+  .formats .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 3; }
+    .formats .box .inner {
+      padding-bottom: 110px;
+      position: relative;
+      width: 50%;
+      background-image: url(../images/formats/background.png);
+      background-repeat: no-repeat;
+      text-align: center; }
+      .formats .box .inner img {
+        position: absolute;
+        top: 100px;
+        left: 65px; }
+      .formats .box .inner h4 {
+        margin-top: 104px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        text-transform: uppercase; }
+      .formats .box .inner p {
+        width: 291px;
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: justify;
+        margin-left: 152px;
+        color: #171717; }
+  .formats .puzzle img {
+    position: absolute;
+    z-index: 1;
+    top: calc(50% + 50px);
+    left: calc(50% - 50px);
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-filter: blur(10px);
+    filter: blur(10px); }

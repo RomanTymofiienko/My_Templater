@@ -1,0 +1,155 @@
+header {
+    width: 100%;
+    display: block;
+    position: relative;
+
+
+    .box {
+        padding-bottom: 125px;
+        background-image: url(../images/header/background.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        position: relative;
+        z-index: 3;
+    }
+
+    ul {
+        display: inline-block;
+
+        li {
+            display: inline-block;
+            margin: 23px 19px 0 0;
+        }
+    }
+
+    h1 {
+        font-size: 1px;
+        visibility: hidden;
+    }
+
+    .logo {
+        margin: 57px 0 0 130px;
+    }
+
+    .language {
+        position: absolute;
+        top: 159px;
+        right: 67px;
+
+        p {
+            margin-left: 17px;
+            padding: 18px 0 0 0;
+            display: inline-block;
+            width: 53px;
+            height: 61px;
+            background-image: url(../images/puzzle/language.png);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-position: top;
+            box-sizing: border-box;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+
+            &:last-child {
+                background-image: url(../images/puzzle/language_2.png);
+                background-position: top;
+                background-repeat: no-repeat;
+                background-position: top;
+
+                a {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .text {
+        margin-top: 75px;
+        padding-left: 20px;
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 68px;
+        line-height: 70px;
+        color: #ffffff;
+        transform: rotate(-8deg);
+    }
+
+    .button {
+        position: absolute;
+        bottom: 150px;
+        left: 110px;
+        padding-top: 35px;
+        width: 285px;
+        height: 102px;
+        background: #F3563B;
+        box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        text-align: center;
+        box-sizing: border-box;
+
+        a {
+            padding: 35px 30px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 35px;
+            color: #ffffff;
+            box-sizing: border-box;
+        }
+    }
+
+    nav {
+        margin: 0 73px 0;
+        text-align: right;
+
+        ul {
+            li {
+                display: block;
+
+                a {
+                    color: #ffffff;
+                    font-family: 'Roboto', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 36px;
+                    line-height: 42px;
+
+                    &:hover {
+                        font-size: 40px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .puzzle {
+        img {
+            position: absolute;
+            z-index: 1;
+
+            &:first-child {
+                top: 20px;
+                left: calc(50% - 30px);
+                transform: translateX(-50%);
+            }
+
+            &:nth-child(2) {
+                top: calc(50% + 180px);
+                left: 0;
+                filter: blur(17px);
+            }
+
+            &:last-child {
+                bottom: 0;
+                left: calc(50% + 30px);
+                transform: translateX(-50%);
+                filter: blur(17px);
+            }
+        }
+    }
+}
